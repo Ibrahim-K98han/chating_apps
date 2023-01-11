@@ -32,6 +32,8 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
                   child: TextField(
                     controller: msgController,
                     decoration: InputDecoration(
+                        fillColor: Colors.grey,
+                        focusColor: Colors.grey,
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(16))),
                   ),
