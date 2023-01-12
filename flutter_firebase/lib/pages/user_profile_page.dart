@@ -42,6 +42,7 @@ class _UserProgileState extends State<UserProgile> {
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 final userModel = UserModel.fromMap(snapshot.data!.data()!);
+                provider.userModel = userModel;
                 return Padding(
                   padding: const EdgeInsets.only(top: 8.0),
                   child: ListView(
